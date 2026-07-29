@@ -1,4 +1,6 @@
 curl_cffi
+wreq
+primp
 Pillow
 random_name
 Requests

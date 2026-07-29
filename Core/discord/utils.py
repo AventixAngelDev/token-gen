@@ -1,6 +1,6 @@
 import re
 import json
-import curl_cffi
+from Core.discord.session import UnifiedSession
 
 from json import dumps, loads, JSONDecodeError
 from typing import Union, Dict, Tuple, Optional
@@ -16,15 +16,14 @@ class DiscordSessionFactory:
         self.proxy = proxy
 
     def create(self):
-        session = curl_cffi.Session(impersonate="chrome146")
+        try:
+            with open("config.json", encoding="utf-8") as f:
+                config = json.load(f)
+                client_type = config.get("generator", {}).get("http_client", "curl_cffi")
+        except Exception:
+            client_type = "curl_cffi"
 
-        if self.proxy:
-            session.proxies = {
-                "http": f"http://{self.proxy}",
-                "https": f"http://{self.proxy}",
-            }
-
-        return session
+        return UnifiedSession(client_type=client_type, impersonate="chrome146", proxy=self.proxy)
 
 class DiscordUtils:
     _cached_build_number = None
@@ -36,7 +35,7 @@ class DiscordUtils:
             "accept-encoding": "gzip, deflate, br",
             "accept-language": "en-US,en;q=0.9",
             "cookie": f"__dcfduid={dcfduid}; __sdcfduid={sdcfduid};",
-            "sec-ch-ua": '"Google Chrome";v="143", "Chromium";v="143", "Not/A)Brand";v="99"',
+            "sec-ch-ua": '"Google Chrome";v="147", "Chromium";v="147", "Not/A)Brand";v="99"',
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": '"Windows"',
             "sec-fetch-dest": "document",
@@ -44,7 +43,7 @@ class DiscordUtils:
             "sec-fetch-site": "none",
             "sec-fetch-user": "?1",
             "upgrade-insecure-requests": "1",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
         }
         session.headers = headers
         data = session.get('https://discord.com/api/v9/experiments')
