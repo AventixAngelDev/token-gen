@@ -2,7 +2,8 @@
     "generator": {
         "thread_count": 1,
         "invite": "",
-        "custom_fingerprints": false
+        "custom_fingerprints": false,
+        "http_client": "wreq"
     },
     "solver": {
         "service": "anysolver",
