@@ -37,18 +37,19 @@
 
 ---
 
-## ✨ Features
-
-* 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
-* ✉️ Full **Email Verification** via [ZeroMail](https://0mail.tech)
-* 📱 **Phone Verification** via API
-* 🎭 Advanced **Account Humanization**
-* 🌐 Custom **Browser Fingerprints**
-* 🚀 Auto-Join **Server Invites**
-
----
-
 ## 🔌 Featured Sponsor
+<p align="center">
+  <a href="https://0mail.tech/">
+    <img src="https://0mail.tech/zeromail.gif" alt="ZeroMail Banner" width="100%" style="border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+</p>
+
+> Uses **Pro Domains** to ensure a **100% success rate** and eliminate **"Invalid Response"** errors.
+>
+> *Available with **Pro** and **Elite** subscriptions.*
+>
+> **`VATOSGIVES10`** — Save **10% on any annual subscription**.
+
 
 <p align="center">
   <a href="https://nodeproxies.xyz/register?ref=4259899A">
@@ -59,9 +60,21 @@
 > 🎁 **Exclusive Deal:** Get **10% OFF** your first 10GB with NodeProxies using coupon code:  
 > **`VATOSMOGS`** — [Claim your discount here](https://nodeproxies.xyz/register?ref=4259899A).
 
+
 ---
 
-## 🌐 Proxy Benchmarks
+## Features
+
+* Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
+* Full **Email Verification** via [ZeroMail](https://0mail.tech)
+* **Phone Verification** via API
+* Advanced **Account Humanization**
+* Custom **Discord Fingerprint** support
+* Auto-Join **Server Invites**
+
+---
+
+## Proxy Benchmarks
 
 > [!NOTE]  
 > Performance, unlock rates, and speed may vary based on your geographic location and active threads. Always run a small test batch before scaling up.
@@ -74,13 +87,14 @@
 
 ---
 
-## 🤝 Integrations & Ecosystem
+## Integrations & Ecosystem
 
 We partner with the most reliable infrastructure providers in the automation space to keep the Gen running flawlessly:
 
 | Service | Protocol / Type | Role in Ecosystem |
 | :--- | :--- | :--- |
 | **[Anysolver](https://anysolver.com)** | Captcha API | Handles complex CAPTCHA and anti-bot verification challenges |
+| **[ZeroMail](https://zeromail.tech)** | Mail API | Provisions email inboxes for instant email verification |
 | **[OnlineSim](https://onlinesim.io)** | SMS API | Provisions virtual phone numbers for instant SMS bypassing |
 | **[Cf-Group](https://t.me/cfvatos)** | Community | Join our official Telegram channel for updates and changelogs |
 
@@ -90,8 +104,9 @@ We partner with the most reliable infrastructure providers in the automation spa
 
 The repo is built and maintained by a dedicated core team.
 
-* **`VatosV2`** — Developer 
-* **`zkamo`** — Hes just here
+* **`VatosV2`** — Developer
+* **`Cf-Development`** - Project Maintainer
+* **`zkamo`** — CF Contributer 
 
 ---
 
