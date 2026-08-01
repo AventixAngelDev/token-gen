@@ -3,7 +3,7 @@
         "thread_count": 1,
         "invite": "",
         "custom_fingerprints": false,
-        "http_client": "wreq"
+        "http_client": "curl_cffi"
     },
     "solver": {
         "service": "anysolver",
